@@ -18,7 +18,7 @@ class Planet:
         self.gravity = 5.5
         self.system = 'Hoth System'
 
-    # Methods
+    # Method
     def orbit(self):
         return f'{self.name} is orbiting in the {self.system}'
 

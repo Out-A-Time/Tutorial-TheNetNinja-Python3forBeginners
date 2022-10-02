@@ -1,0 +1,33 @@
+class Planet:
+    # Attributes
+    def __init__(self, name, radius, gravity, system):
+        self.name = name
+        self.radius = radius
+        self.gravity = gravity
+        self.system = system
+
+    # Method
+    def orbit(self):
+        return f'{self.name} is orbiting in the {self.system}'
+
+
+hoth = Planet('Hoth', 200000, 5.5, 'Hoth System')
+print(f'Name is: {hoth.name}')
+print(f'Radius is: {hoth.radius}')
+print(f'The gravity is: {hoth.gravity}')
+print(hoth.orbit())
+
+naboo = Planet('Naboo', 300000, 8, 'Naboo System')
+print(f'Name: {naboo.name}')
+print(f'Radius: {naboo.radius}')
+print(f'Gravity: {naboo.gravity}')
+print(naboo.orbit())
+
+# Name is: Hoth
+# Radius is: 200000
+# The gravity is: 5.5
+# Hoth is orbiting in the Hoth System
+#Name: Naboo
+#Radius: 300000
+#Gravity: 8
+# Naboo is orbiting in the Naboo System
